@@ -1,5 +1,29 @@
 <x-app-layout>
     <x-container>
+        <form action="" class="px-4 mb-8">
+            <textarea 
+                name="body" 
+                rows="2" 
+                class="w-full 
+                        mb-2 
+                        p-0
+                        text-black 
+                        bg-transparent 
+                        border-0 
+                        border-b-2 
+                        border-slate-800 
+                        focus:border-b-slate-700 
+                        focus:ring-0
+                        resize-none
+                        overflow-hidden"
+                placeholder="Your comment..."
+            ></textarea>
+
+            <input 
+                type="submit"
+                class="px-4 py-2 bg-yellow-400 text-gray-400 font-semibold sm:rounded-lg text-xs">
+        </form>
+
         @foreach ($posts as $post)
             <a href="" class="px-6 mb-2 flex items-center gap-2 font-medium text-slate-800">
                 <svg class="h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
