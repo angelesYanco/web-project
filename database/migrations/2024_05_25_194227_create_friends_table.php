@@ -18,7 +18,7 @@ return new class extends Migration
             $table->foreignId('to_id')->constrained('users')->onDelete('cascade');// to_id, users
             $table->boolean('accepted')->default(false);
 
-            $table->timestamps();
+            //$table->timestamps();
         });
     }
 
