@@ -21,9 +21,10 @@
                 placeholder="Your comment..."
             ></textarea>
 
-            <input 
-                type="submit"
-                class="px-4 py-2 bg-yellow-400 text-gray-400 font-semibold sm:rounded-lg text-xs">
+            {{-- <input 
+                type=""
+                class="px-4 py-2 bg-yellow-400 text-gray-400 font-semibold sm:rounded-lg text-xs"> --}}
+            <x-submit-button>Submit</x-submit-button>
         </form>
 
         @foreach ($posts as $post)
